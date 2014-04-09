@@ -2,7 +2,11 @@
 // copyright chris wanstrath
 // https://github.com/defunkt/jquery-pjax
 
-(function($){
+/**
+ * Adapted for Browserify
+ */
+
+module.exports = function($) {
 
 // When called on a container with a selector, fetches the href with
 // ajax into the container or with the data-pjax attribute on the link
@@ -836,4 +840,4 @@ $.support.pjax =
 
 $.support.pjax ? enable() : disable()
 
-})(jQuery);
+};
